@@ -15,9 +15,9 @@ void getResult(int Pack[240][2], int x1, int y1, int x2, int y2)
     ResultPack[0][0] = 0;
     if (Pack[0][0] <= 1)
         return;
-    x3 = Pack[1][0];
+    x3 = Pack[1][0];                                                //初始化为P0
     y3 = Pack[1][1];
-    R = x1 * y2 + x3 * y1 + x2 * y3 - x3 * y2 - x2 * y1 - x1 * y3;
+    R = x1 * y2 + x3 * y1 + x2 * y3 - x3 * y2 - x2 * y1 - x1 * y3;  //点到直线的距离 初始化
     Rmax = R;
     tmax = 1;
     for (i = 2; i <= Pack[0][0]; i++)
@@ -25,13 +25,13 @@ void getResult(int Pack[240][2], int x1, int y1, int x2, int y2)
         x3 = Pack[i][0];
         y3 = Pack[i][1];
         R = x1 * y2 + x3 * y1 + x2 * y3 - x3 * y2 - x2 * y1 - x1 * y3;
-        if (R >= 0)
+        if (R >= 0)                                                 //备份到ResultPack 是上凸包的
         {
             t = ++ResultPack[0][0];
             ResultPack[t][0] = x3;
             ResultPack[t][1] = y3;
         }
-        if (R > Rmax)
+        if (R > Rmax)                                               //寻找距离最大的点
         {
             Rmax = R;
             tmax = i;
@@ -80,7 +80,7 @@ void main()
     y1 = Point[1][1];
     x2 = x1;
     y2 = y1;
-    for (i = 2; i <= Point[0][0]; i++)
+    for (i = 2; i <= Point[0][0]; i++)     //找出横坐标最小和最大的作为P0和Pn
     {
         x3 = Point[i][0];
         y3 = Point[i][1];
@@ -95,13 +95,13 @@ void main()
             y2 = y3;
         }
     }
-    g_result[1][0] = x1;
+    g_result[1][0] = x1;                    //P0(x1,y1)是横坐标最小的点
     g_result[1][1] = y1;
-    g_result[2][0] = x2;
+    g_result[2][0] = x2;                    //Pn(x2,y2)是横坐标最大的点
     g_result[2][1] = y2;
     g_result[0][0] += 2;
-    getResult(Point, x1, y1, x2, y2);
-    getResult(Point, x2, y2, x1, y1);
+    getResult(Point, x1, y1, x2, y2);       //上凸包迭代
+    getResult(Point, x2, y2, x1, y1);       //下凸包迭代
 
     printf("\n\n构成凸包的点有：\n");
     for (i = 1; i <= g_result[0][0]; i++)
