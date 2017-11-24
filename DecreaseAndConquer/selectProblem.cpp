@@ -1,3 +1,9 @@
+/**
+ * 问题描述：
+ * 选取数列中第k小的数
+ * 时间复杂度为O(n)
+ */
+
 #include <stdio.h>
 
 #define MAXN 10

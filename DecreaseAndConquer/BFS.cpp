@@ -1,3 +1,8 @@
+/**
+ * 问题描述：
+ * 广度优先搜索图
+ */
+
 #include <iostream>
 #include <queue>
 using namespace std;

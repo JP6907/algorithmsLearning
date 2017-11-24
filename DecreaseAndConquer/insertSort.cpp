@@ -1,3 +1,8 @@
+/**
+ * 问题描述：
+ * 插入排序
+ */
+
 #include <stdio.h>
 int insert(int poker[], int card, int n) //把card插入前第0~n筆已排序好的資料
 {
