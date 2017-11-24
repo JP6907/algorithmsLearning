@@ -1,3 +1,8 @@
+/**
+ * 问题描述：
+ * Gramham扫描的凸包
+ * 待研究
+ */
 //凸包-Graham扫描
 #include <iostream>
 #include <algorithm>
