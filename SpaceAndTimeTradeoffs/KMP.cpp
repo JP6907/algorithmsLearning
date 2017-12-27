@@ -3,7 +3,7 @@
  * KMP字符串匹配算法
  * http://dsqiu.iteye.com/blog/1700312
  * https://github.com/Mr-YangCheng/ForAndroidInterview/blob/master/data%20structure/%5B%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%5D%20KMP%E7%9A%84%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E8%A7%A3%E9%87%8A.md
- * 
+ * https://www.cnblogs.com/zhangtianq/p/5839909.html
  */
 /* *******************************************************************
     created:    2006/07/02

@@ -2,6 +2,8 @@
  * 问题描述：
  * 单纯形法的另一种解法
  * http://www.cnblogs.com/ECJTUACM-873284962/p/7097864.html
+ * https://www.jianshu.com/p/dd0761a2fdfd
+ * http://blog.csdn.net/u013007900/article/details/46524381
  */
 #include <bits/stdc++.h>
 using namespace std;
