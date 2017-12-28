@@ -13,7 +13,7 @@
 计算过程展示
 
 递归算法的分析
-最近点、归并排序、快排
+最近点、归并排序、快排、凸包
 DFS、BFS、割点
 AVL 红黑树 heapSort
 KMP BM openHash
