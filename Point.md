@@ -13,7 +13,7 @@
 计算过程展示
 
 递归算法的分析
-最近点、归并排序、快排
+最近点、归并排序、快排、凸包
 DFS、BFS、割点
 AVL 红黑树 heapSort
 KMP BM openHash
@@ -21,4 +21,4 @@ Prim kruskal Dijikstra huffman
 斐波那契数列 最优二叉搜索树 背包问题 Warshall&Floyd 最小成本路径 LCS MCM
 A* 分支限界 爬山法 BF搜索
 单纯形法 网络法
-并行枚举排序 PSRS排序
+并行枚举排序 PSRS排序 valiant
