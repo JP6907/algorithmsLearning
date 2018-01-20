@@ -1,6 +1,6 @@
 #define BOARDSIZE 30
 #include <iostream>
-__int64 total = 0;
+long long total = 0;
 static int N;
 bool markboard(bool* b, int row, int col) {
 	for (int i = row; i < N; ++i) {
@@ -29,7 +29,8 @@ void IsQuerePos(bool* board, int idx) {
 	}
 	delete b;
 }
-__int64 queens_Normal(int n) {
+long long queens_Normal(int n) {
+	total = 0;
 	N = n;
 	bool *board = new bool[BOARDSIZE*BOARDSIZE];
 	bool *p = board;

@@ -3,8 +3,13 @@
 #include<omp.h>
 #include<math.h>
 #include<time.h>
+#include<stdint.h>
+#include<stdlib.h>
+#include<stdio.h>
 
-__int64 queens_Normal(int n);
-__int64 queens_Opti(int n);
-__int64 queens_Opti_Parallel(int n);
+
+long long queens_Normal(int n);
+long long queens_Opti(int n);
+
+
 
